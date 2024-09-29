@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor's Homepage</title>
+    <link rel="stylesheet" href="css/indexstyle.css">
+
+    <script>
+        src="js/hover.js"
+    </script>
+
+    <script src="js/count.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Dr. Jonathan Keller</h1>
+            <p>Professor of Computer Science, San Jose State University</p>
+        </div>
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+    </header>
+
+    <nav>
+        <h2>Contents</h2>
+        <a href="index.html" class="hover-effect">Home</a>
+
+        <details>
+            <summary class="hover-effect">AI Related Courses</summary>
+            <ul>
+                <li class="hover-effect">Artificial Intelligence</li>
+                <li class="hover-effect">Data Mining</li>
+                <li class="hover-effect">Deep Learning</li>
+                <li class="hover-effect">Information Retrieval</li>
+                <li class="hover-effect">Machine Learning</li>
+                <li class="hover-effect">Natural Language Processing</li>
+                <li class="hover-effect">Semantic Web</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary class="hover-effect">System Related Courses</summary>
+            <ul>
+                <li class="hover-effect">Big Data</li>
+                <li class="hover-effect">Cloud Computing</li>
+                <li class="hover-effect">Computer Architecture</li>
+                <li class="hover-effect">Computer Networks</li>
+                <li class="hover-effect">Distributed Systems</li>
+                <li class="hover-effect">Internet Architecture and Protocols</li>
+                <li class="hover-effect">Operating Systems</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary class="hover-effect">Theory Related Courses</summary>
+            <ul>
+                <li class="hover-effect">Compilers</li>
+                <li class="hover-effect">Computer Security</li>
+                <li class="hover-effect">Data Structures and Computer Algorithms</li>
+                <li class="hover-effect">Discrete Structures</li>
+                <li class="hover-effect">Network Science</li>
+                <li class="hover-effect">Programming Language</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary class="hover-effect">Application Related Courses</summary>
+            <ul>
+                <li class="hover-effect">Computer Graphics</li>
+                <li class="hover-effect">Database Systems</li>
+                <li class="hover-effect">Interactive Multimedia & Game Programming</li>
+                <li class="hover-effect">Visualization</li>
+                <li class="hover-effect"><a href="web.html" ">Web Programming</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary class="hover-effect">Hardware Related Courses</summary>
+            <ul>
+                <li class="hover-effect">Computer-Aided Design</li>
+                <li class="hover-effect">SoC Verification</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary class="hover-effect">Other Courses</summary>
+            <ul>
+                <li class="hover-effect">Analytics Process</li>
+                <li class="hover-effect">Capstone</li>
+                <li class="hover-effect">Project</li>
+                <li class="hover-effect">Biography</li>
+            </ul>
+        </details>
+    </nav>
+
+    <main>
+        <img src="images/another-profile.jpg" alt="Another Profile Picture" class="professor-img hover-effect">
+        <h2>Welcome to My Homepage</h2>
+        <p>Hello! I am Dr. Jonathan Keller, a professor at San Jose State University in the Computer Science Department.</p>
+        <h3>Course List</h3>
+        
+        </ul>
+        
+            <ul class="course-list">
+            <li>Introduction to Programming</li>
+            <li>Data Structures</li>
+            <li>Algorithms</li>
+            <li>Web Programming</li>
+            </ul>
+
+            <div class="pagination">
+                <button onclick="prevPage()">Previous</button>
+                <span>Page <span id="current-page">1</span> of <span id="total-pages">3</span></span>
+                <button onclick="nextPage()"><a href="page2.html">Next</a></button>
+            </div>
+            
+    
+    </main>
+
+    <section class="mt-4 page-hits">
+        <h5>Page Hits</h5><span id="hit-count">0</span>
+    </section>
+
+    <footer>
+        <p>© 2024 Dr. Jonathan Keller - San Jose State University | Email: jonathan.k@sjsu.edu</p>
+        <p>Disclaimer: The names, biographies, and universities mentioned in this content are fictional and for illustrative purposes only. This information is created for creative or educational use and should not be interpreted as factual or representative of real-world individuals or institutions.</p>
+    </footer>
+</body>
+</html>
+
+
