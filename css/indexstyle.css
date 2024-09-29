@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0D6766;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img.profile-img {
+    width: 200px;
+    height: 100px;
+    display: block;
+}
+
+nav {
+    width: 220px;
+    float: left;
+    background-color: #333;
+    height: 100vh;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: font-size 0.3s;
+}
+
+nav a:hover {
+    background-color: #575757;
+    font-size: 1.1em; /* Increase font size on hover */
+}
+
+main {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+footer {
+    clear: both;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-list li {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #0D6766;
+    color: white;
+    border-radius: 5px;
+}
+
+.professor-img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.hover-effect {
+    cursor: pointer;
+    transition: font-size 0.05s; /* Smooth transition for font size */
+}
+
+.hover-effect:hover {
+    font-size: 1.1em; /* Enlarge font size on hover */
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center the text */
+    text-decoration: none !important; /* Ensure no underline */
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button a {
+    text-decoration: none !important; /* Remove underline if it's coming from anchor tag */
+    color: inherit; /* Inherit color from the button */
+}
+
+
+/* Main Styles for Large Screens */
+
+.profile-img, .professor-img {
+    max-width: 250px;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+/* Larger screens layout locked in place */
+@media (min-width: 992px) {
+    /* Ensure the header stays in place */
+    .row > div {
+        display: flex;
+        align-items: center;
+    }
+
+    .col-lg-4, .col-lg-8 {
+        flex: 1;
+    }
+}
+
+/* Responsive Layout for Smaller Screens */
+
+@media (max-width: 991.98px) {
+    .profile-img, .professor-img {
+        max-width: 150px; /* Make the images smaller on mobile */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Make text smaller for small screens */
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .hover-effect {
+        font-size: 1rem;
+    }
+
+    .pagination button {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
